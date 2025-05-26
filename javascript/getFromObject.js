@@ -8,7 +8,7 @@
 function get(obj, path) {
     let result = {...obj};
     for (const part of path.split('.')){
-        if (result[part]){
+        if (part in result){
             result = result[part];
         }
         else {
