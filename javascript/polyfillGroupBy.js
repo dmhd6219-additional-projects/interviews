@@ -15,7 +15,7 @@ function groupBy (fn) {
     return result;
 }
 
-Array.groupBy = groupBy;
+Array.prototype.groupBy = groupBy;
 
 console.log([1, 4, 123, 44444, 88888, 12345].groupBy(
     x => x.toString().length,
